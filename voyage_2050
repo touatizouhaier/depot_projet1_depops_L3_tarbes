@@ -1,3 +1,5 @@
+pipeline {
+
 stages:          # List of stages for jobs, and their order of execution
   - build
   - test
@@ -80,3 +82,4 @@ verification-train:   # This job also runs in the test stage.
     - echo "Verification du déploiement du train d'atterissage"
     - sleep 10
     - echo "Train sorti. "    
+}
