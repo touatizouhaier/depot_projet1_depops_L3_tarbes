@@ -25,11 +25,13 @@ agent any
 // Déclarations des étapes de construction de Jenkinsfile à partir de GitHub //
 /* Personnaliser le message d'erreur en fonction du résultat de JenkinsFile */
 
-currentBuild.result = "SUCCESS"
 
-    try {
 
 stages {
+
+    currentBuild.result = "SUCCESS"
+
+    try {
     stage('build') {
       steps {
         script {
@@ -72,6 +74,4 @@ stages {
 
         throw err
     }
-
-
 }
