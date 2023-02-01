@@ -59,6 +59,7 @@ stages {
       }
     }
 }
+    }
  catch (err) {
 
         currentBuild.result = "FAILURE"
@@ -71,6 +72,6 @@ stages {
 
         throw err
     }
-}
+
 
 }
