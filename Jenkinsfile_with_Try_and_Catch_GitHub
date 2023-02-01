@@ -60,8 +60,9 @@ stages {
         }
       }
     }
-}
+
     }
+}
  catch (err) {
 
         currentBuild.result = "FAILURE"
